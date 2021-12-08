@@ -548,7 +548,7 @@ extension UIScrollView {
 }
 
 // MARK: - Internal object observer
-internal class TPKeyboardAvoidingState: NSObject {
+class TPKeyboardAvoidingState: NSObject {
 	var priorInset = UIEdgeInsets.zero
 	var priorScrollIndicatorInsets = UIEdgeInsets.zero
 	
@@ -559,7 +559,7 @@ internal class TPKeyboardAvoidingState: NSObject {
 	var priorPagingEnabled = false
 }
 
-internal extension UIScrollView {
+extension UIScrollView {
 	fileprivate struct AssociatedKeysKeyboard {
 		static var DescriptiveName = "KeyBoard_DescriptiveName"
 	}
